@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <h1>Contact</h1>
+    <div>
+      <!-- Navbar -->
+      <div class="sidebar">
+        <img
+          src="../images/terry_crews.jpeg"
+          class="profile-image"
+          id="smallImage"
+        />
+        <a href="../index.html">Home</a>
+        <div>User Name</div>
+      </div>
+      <!-- Main Section -->
+      <div class="flex-wrapper">
+        <div class="flex-child">
+          <div class="flex-grandchild">A</div>
+          <div class="flex-grandchild flex-grandchild-large">B</div>
+          <div class="flex-grandchild">C</div>
+        </div>
+
+        <div class="flex-child-two">
+          <div class="flex-grandchild-two">A</div>
+          <div class="flex-grandchild-two two-b">B</div>
+          <!-- The Flex Way -->
+          <div class="flex-grandchild-two two-c">C</div>
+          <!-- The Position Way -->
+          <!-- <div class="flex-grandchild-two">
+            <div class="two-c">C</div>
+          </div> -->
+        </div>
+
+        <div class="flex-child">
+          <form
+            class="form-wrapper"
+            name="contact-form"
+            target="_blank"
+            method="post"
+          >
+            <input
+              type="text"
+              class="form-input"
+              placeholder="First name"
+              id="firstName"
+            />
+            <input
+              type="text"
+              class="form-input form-last-name"
+              placeholder="Last name"
+              id="lastName"
+            />
+            <input
+              type="file"
+              class="form-input]"
+              name="myfile"
+              id="fileUpload"
+            />
+            <input
+              type="checkbox"
+              class="form-input"
+              name="checkbox"
+              id="checkbox"
+            />
+            <!-- <input type="submit" /> -->
+          </form>
+          <button id="submitButton" class="submit-button">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Remember, the order of your JS files matters! -->
+    <!-- DO THIS: Preferred way to write JS is like this in an external JS file -->
+    <script src="../js/contact.js"></script>
+  </body>
+</html>

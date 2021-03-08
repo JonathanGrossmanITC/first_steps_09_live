@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+}
+
+body {
+  position: relative;
+}
+
+h1,
+h2 {
+  margin: 5px 0;
+}
+
+.sidebar {
+  border: 2px dashed #46a049;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  width: 200px;
+}
+
+.profile-image {
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+}
+
+.profile-image-big {
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+}
+
+.soccer-image {
+  border-radius: 50%;
+  height: 140px;
+  width: 140px;
+}
+
+.full-width {
+  background-color: brown;
+  width: 100%;
+}
+
+.title-section {
+  display: flex;
+}
+
+.title-wrapper {
+  background-color: gold;
+  border-radius: 5px;
+  height: 200px;
+  padding: 15px;
+  width: fit-content;
+}
+
+.title {
+  color: blueviolet;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 40px;
+  transition: font-size 2s linear, color 2s;
+}
+
+.title:hover {
+  color: darkblue;
+  font-size: 50px;
+}
+
+.subtitle {
+  color: rgb(38, 8, 65);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 32px;
+}
+
+.links-wrapper {
+  margin: 10px;
+}
+
+.link {
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+  padding: 2px 10px;
+  text-decoration: none;
+}
+
+.form-wrapper {
+  margin: 20px;
+}
+
+.text-input {
+  background-color: gray;
+  border: none;
+}
+
+.text-input:hover {
+  background-color: red;
+}
+
+.text-input:focus {
+  background-color: yellow;
+}
+
+.text-input::placeholder {
+  color: black;
+}
+
+.checkbox {
+  height: 25px;
+  width: 25px;
+}
+
+.checkbox::after {
+  background: green;
+}
+
+.radio-button {
+  background-color: pink;
+}
+
+.enabled-button {
+  transition: transform 3s;
+}
+
+.enabled-button:hover {
+  transform: scale(1.2, 1.2);
+}
+
+@keyframes change-color {
+  from {
+    background-color: darkblue;
+  }
+  to {
+    background-color: pink;
+  }
+}
+
+.disabled-button {
+  background-color: pink;
+  color: black;
+
+  /* transition: color 2s, background-color 2s; */
+}
+
+.disabled-button:hover {
+  animation: change-color 3s;
+  /* background-color: black;
+  color: pink; */
+}
+
+.middle-wrapper {
+  background-color: darkcyan;
+  height: 100px;
+  margin: 10px 0;
+  position: relative;
+  width: 70%;
+}
+
+.one {
+  position: absolute;
+  left: 0;
+  top: 20px;
+}
+
+.two {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.three {
+  position: absolute;
+  left: 100px;
+  top: 50px;
+}
+
+.letter-a {
+  position: absolute;
+  left: 90px;
+  bottom: 10px;
+}
+
+.letter-b {
+  position: absolute;
+  left: 45px;
+  bottom: 50px;
+}
+
+.letter-c {
+  position: absolute;
+  right: 90px;
+  top: 80px;
+}
+
+.flex-wrapper {
+  /* flex */
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* general */
+  background-color: blue;
+  width: 70%;
+}
+
+.flex-child {
+  /* flex */
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+
+  /* general */
+  border: 2px solid black;
+  margin: 5px;
+  width: 90%;
+}
+
+.flex-grandchild {
+  border: 1px dashed red;
+  flex-grow: 1;
+  margin: 5px;
+  padding: 5px 10px;
+}
+
+.flex-grandchild-large {
+  flex-grow: 3;
+  /* align-self: flex-end; */
+}
+
+.flex-child-two {
+  /* flex */
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* general */
+  border: 2px solid black;
+  margin: 5px;
+  width: 90%;
+}
+
+.flex-grandchild-two {
+  background-color: cornflowerblue;
+  height: 50px;
+  margin: 5px;
+  /* width: 100%; */
+  position: relative;
+}
+
+/* The Flex Way */
+.two-b {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.two-c {
+  align-items: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  height: 100px;
+}
+
+/* The Position Way */
+
+/* .two-c {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+} */
+
+.form-wrapper {
+  /* flex */
+  display: flex;
+  flex-direction: column;
+
+  /* general */
+  border: 1px solid aliceblue;
+  padding: 10px;
+  margin: 5px;
+}
+
+.form-input {
+  margin: 5px;
+}
+
+@keyframes input-focus {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+
+.form-last-name {
+  border: 3px solid grey;
+  background-color: black;
+  color: white;
+}
+
+.form-last-name:hover {
+  animation: input-focus 3s;
+}
+
+.loading {
+  color: red;
+  font-size: 40px;
+}
+
+.not-loading {
+  display: none;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="description" content="Free Web tutorials" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="https://pngimg.com/uploads/mario/mario_PNG53.png"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Day 2 Live</title>
+  </head>
+  <body>
+    <div>
+      <div class="sidebar">
+        <img src="./images/terry_crews.jpeg" class="profile-image" />
+        <a href="./html/contact.html">Contact</a>
+        <div>User Name</div>
+      </div>
+    </div>
+
+    <!-- This absolute path is way too long and should be replaced -->
+    <img src="" id="soccerImage" class="soccer-image" />
+    <div>
+      <button id="prevBtn">Previous</button>
+      <button id="nextBtn">Next</button>
+    </div>
+    <br />
+    <div class="title-section">
+      <div class="title-wrapper">
+        <h1 class="title" id="title">This is confusing.</h1>
+        <h2 class="subtitle">This will be easy.</h2>
+      </div>
+    </div>
+
+    <div class="links-wrapper">
+      <a class="link" href="https://www.itc.tech">Visit ITC</a>
+      <a class="link" href="https://www.youtube.com">Visit YouTube</a>
+      <a class="link" href="https://www.google.com">Visit Google</a>
+    </div>
+
+    <iframe
+      width="400"
+      height="400"
+      frameborder="0"
+      scrolling="no"
+      marginheight="0"
+      marginwidth="0"
+      src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+    ></iframe>
+    <div class="form-wrapper">
+      <input type="text" class="text-input" placeholder="First name" />
+      <input type="checkbox" class="checkbox" />
+      <input type="number" class="text-input" placeholder="Favorite number" />
+      <input type="radio" class="radio-button" />
+    </div>
+
+    <div>
+      <div class="middle-wrapper">
+        Numbers
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+      </div>
+      <div class="middle-wrapper">
+        Letter
+        <div class="letter-a">A</div>
+        <div class="letter-b">B</div>
+        <div class="letter-c">C</div>
+      </div>
+    </div>
+
+    <div></div>
+
+    <button class="enabled-button" id="submitButton">Enabled</button>
+    <button class="disabled-button" disabled>Disabled</button>
+
+    <!-- DON"T DO THIS: You can write JS in HTML elements but not the ideal way! Please don't do it. -->
+    <div onclick="document" class="full-width">100%</div>
+
+    <!-- Remember, the order of your JS files matters! -->
+    <!-- DO THIS: Preferred way to write JS is like this in an external JS file -->
+    <script src="./js/index.js"></script>
+
+    <!-- One way to write JS but not the ideal way! -->
+    <!-- <script>
+      console.log("Coming to you from the HTML file, live.");
+    </script> -->
+  </body>
+</html>
